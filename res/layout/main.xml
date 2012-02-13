@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	    <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="2.5"
+	        >
+        	<android.support.v4.view.ViewPager
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:id="@+id/viewPager"
+				android:background="#FFF"
+			/>
+	    </LinearLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/rlIndexContainer"
+	        android:layout_width="fill_parent"
+    	    android:layout_weight="0.1"
+    	    android:layout_height="0dp"
+    	    android:gravity="center_vertical"
+	        >
+	        <LinearLayout
+	            android:id="@+id/llIndex"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:background="#E8E8E8"
+	            android:gravity="center_vertical" 
+ 				android:orientation="horizontal"
+ 				>
+    		</LinearLayout>
+    		<ImageView
+    		    android:id="@+id/ivPositionBall"
+    		    android:background="@drawable/positionball"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="fill_parent"
+    		    android:visibility="visible"
+    		    android:layout_centerVertical="true"
+    		    >
+    		</ImageView>
+	    </RelativeLayout>
+</LinearLayout>
